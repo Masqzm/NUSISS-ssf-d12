@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Day 12</h1>
+    <h2>Practice</h2>
+        <form action="index_cart.html">
+            <input type="submit" value="Cart" />
+        </form>
+        <form method="GET" action="/weather">
+            <button type="submit">Weather</button>
+        </form>
+    <br>
+    <br>
+    <h2>Workshop</h2>
+    <form method="GET" action="/generate">
+        <!-- controls -->
+        <table>
+            <tr>
+                <td> Name: </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td> Count: </td>
+                <td>
+                    <input type="number" name="count" min="1" max="31">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit"> Generate </button>
+                    <button type="submit" formaction="/generate/samplesoln"> Generate (sample solution) </button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

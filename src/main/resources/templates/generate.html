@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Lucky Numbers</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Hello <span data-th-text=${name}></span></h1>
+
+    <h2>Here are your <span data-th-text=${count}></span> lucky number(s):</h2>
+
+    <h3> <a href="/">Back</a> </h3>
+
+    <div class="num-list">
+        <img data-th-each="numImg : ${numFileList}"
+            data-th-src="${numImg}" class="thumbnail">
+        </div>
+    </div>
+</body>
+
+</html>
